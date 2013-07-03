@@ -1,0 +1,101 @@
+\documentclass[9pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.80]{geometry}
+\setlength{\hintscolumnwidth}{4cm}            % if you want to change the width of the column with the dates
+%\setlength{\maketitlenamewidth}{10cm}        % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks..
+
+% personal data
+\firstname{Armen}
+\familyname{Baghumian}
+\title{Resumé}
+\address{13/20-24 Sheehy St, Glebe}{2037 Sydney}
+\mobile{+61~(431)~752~057}
+\email{armen@vardump.org}
+\homepage{http://vardump.org}
+\photo[80pt][0pt]{qr}
+%\extrainfo{additional information}
+%\quote{Some quote (optional)}
+
+\begin{document}
+\makecvtitle
+
+\section{Experience}
+\cventry{3 Years}{Lead Developer / Systems Administrator}{Karina}{Tehran, Iran}{}{
+\begin{itemize}
+\item Was in charge of a team of 7 developers as a lead developer
+\item Built from the ground up and maintained 4 Debian GNU/Linux servers (HP DL380 G6/G7 servers) and maintained 2 CentOS servers
+\item Installed and maintained a Xen 3.2 server
+\item In charge of implementation of http://autocharge.ir - A TopUp web application for MCI mobile phones and proudly the most used TopUp web application for MCI{
+    \begin{itemize}
+    \item Implemented RESTful TopUp web-service for high traffic websites (e.g. pec.ir - Parsian Bank) and mobile applications (e.g. Saman Bank)
+    \item Implemented specific monitoring software to monitor http://autocharge.ir
+    \end{itemize}}
+\item In charge of implementation of http://sapak.ir - A content management system for premium SMS services
+\item In charge of monitoring and maintenance of premium SMS services for both MTN and MCI mobile phone operators
+\end{itemize}}
+\cventry{10 Months}{Continuous Integration Engineer}{Parsis}{Tehran, Iran}{}{
+\begin{itemize}
+\item Designed a build system based on PEAR packaging
+\item Integrated Hudson CI with the packaging/build system and Agavi framework
+\end{itemize}}
+\cventry{3 Years}{Lead Developer / Systems Administrator}{DES}{Tehran, Iran}{}{
+\begin{itemize}
+\item Was in charge of a team of 5 developers as a lead developer
+\item Built from the ground up and maintained 3 Debian GNU/Linux bare metal servers (HP DL380 G5)
+\item Designed and developed a web application framework called Arag based on Kohana
+\item Got accepted as the core development team of Kohana 2.0 (http://bit.ly/19PKNW4)
+\item Optimized the framework to be used in high traffic products of the company such as an online flight reservation system
+\item Implemented and designed an online flight reservation system, by leveraging Amadeus GDS SOAP web services
+\end{itemize}}
+\cventry{2 Years}{Web Application Developer}{AFA}{Isfahan, Iran}{}{%
+\begin{itemize}
+\item Implemented and designed a framework based on Mojavi 3.0
+\item Implemented a CMS based on designed framework
+\end{itemize}}
+
+\section{Skills}
+\cvdoubleitem{7 Years}{\textbf{PHP}}{1 Year}{\textbf{Go}}
+\cvdoubleitem{3 Years}{\textbf{Bash scripting}}{10 Years}{\textbf{Debian GNU/Linux}}
+\cvdoubleitem{2 Years}{\textbf{jQuery}}{7 Years}{\textbf{MySQL}}
+\cvdoubleitem{7 Years}{\textbf{Apache}}{2 Years}{\textbf{nginx}}
+\subsection{Miscellaneous}
+\cvdoubleitem{Web Application Frameworks}{\textbf{Slim, Silex, Kohana}}{Template Engines}{\textbf{Twig, Mustache}}
+\cvdoubleitem{Version Control Systems}{\textbf{Git}}{Document Databases}{\textbf{MongoDB}}
+\cvdoubleitem{Distributed File-systems}{\textbf{MooseFS}}{Key-Value Stores}{\textbf{Redis, Memcached, Kumofs}}
+\cvdoubleitem{Monitoring Systems}{\textbf{OpenTSDB}}{Message Queues}{\textbf{Gearman}}
+\cvdoubleitem{Configuration Management}{\textbf{Ansible}}{Virtualization}{\textbf{Xen, LXC}}
+\cvdoubleitem{Document Markup Languages}{\LaTeX{}}{}{}
+
+\section{Education}
+\cventry{2003--2005}{Bachelor of Software Engineering}{Azad University of Najafabad}{Isfahan, Iran}{}{}
+\cventry{2001--2003}{Associate of Software Engineering}{Jihad University}{Isfahan, Iran}{}{}
+
+\section{Side Projects}
+\cvlistitem{https://github.com/armen}
+
+\section{Presentations}
+\cventry{2008}{udev, devfs done right}{Tehran Linux Users Group - http://tehlug.org}{Tehran, Iran}{}{}
+\cventry{2006}{Introduction to GNU/Linux}{Towheed University of Applied Science and Technology}{Isfahan, Iran}{}{}
+\cventry{2006}{Introduction to Web Based Application Development Based on Free/Libre Software Solutions}{Azad University of Najafabad}{Isfahan, Iran}{}{}
+
+%\clearpage
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 01, 1984}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure{curriculum vit\ae{}}
+%\makelettertitle
+
+%\makeletterclosing
+\end{document}
